@@ -1,5 +1,9 @@
 /* ROBOT.GIF from Giphy*/
+
+
 /* Credit -> eyedesyn */
+
+
 /* Link -> https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
 
 * {
@@ -94,12 +98,13 @@ button:disabled {
 
 /* Media Queries for Tablet or Smaller */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .container {
         background-position: center center;
         background-size: cover;
     }
     button {
         box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+        margin-top: 30vh;
     }
 }
