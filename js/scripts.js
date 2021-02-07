@@ -2,20 +2,6 @@ const button = document.getElementById('id-button');
 const audioElement = document.getElementById('audio');
 const jokeTextBubble = document.getElementById('id-bubble');
 
-// function test() {
-//     VoiceRSS.speech({
-//         key: '502ec5ac89c84b0e929d5251d0bbd5b8',
-//         src: 'Hello, world!',
-//         hl: 'en-us',
-//         v: 'Linda',
-//         r: 0,
-//         c: 'mp3',
-//         f: '44khz_16bit_stereo',
-//         ssml: false
-//     });
-// }
-
-// test();
 
 // Receive Jokes from Joke API
 async function getJokes() {
@@ -25,17 +11,37 @@ async function getJokes() {
     try {
         const response = await fetch(apiUrl)
         const data = await response.json();
+
+        // Check if Joke received is a Single or Double Part Joke
         if (data.setup) {
-            joke = `${data.setup} .... ${data.delivery}`;
+            joke = `${data.setup} ....... ${data.delivery}`;
         } else {
             joke = data.joke;
         }
         console.log(joke);
 
+        // Pass Joke to tellJoke() for Text to Speech API
+        tellJoke(joke);
+
     } catch (error) {
         // Catch Error
-        console.log("Oops!", error);
+        console.log("Oops! An Error was found.", error);
     }
+}
+
+
+// Passing Joke to Text to Speech API (VoiceRSS)
+function tellJoke(joke) {
+    VoiceRSS.speech({
+        key: '49515e421e134e50ab9b40a4f375a824',
+        src: joke,
+        hl: 'en-ca',
+        v: 'Clara',
+        r: -1,
+        c: 'mp3',
+        f: '44khz_16bit_stereo',
+        ssml: false,
+    });
 }
 
 getJokes();
