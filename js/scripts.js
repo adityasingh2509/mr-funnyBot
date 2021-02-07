@@ -14,18 +14,19 @@ function displayJoke(joke) {
     jokeTextBubble.innerText = joke;
 }
 
+
 // Receive Jokes from Joke API
 async function getJokes() {
     let joke = '';
     const apiUrl = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
 
     try {
-        const response = await fetch(apiUrl)
+        const response = await fetch(apiUrl);
         const data = await response.json();
 
         // Check if Joke received is a Single or Double Part Joke
         if (data.setup) {
-            joke = `${data.setup} ....... ${data.delivery}`;
+            joke = `${data.setup} .... ${data.delivery}`;
         } else {
             joke = data.joke;
         }
