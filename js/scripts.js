@@ -44,4 +44,6 @@ function tellJoke(joke) {
     });
 }
 
-getJokes();
+
+// Event Listeners
+button.addEventListener('click', getJokes);
