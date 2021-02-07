@@ -9,6 +9,11 @@ function toggleButton() {
 }
 
 
+// Display Joke Text
+function displayJoke(joke) {
+    jokeTextBubble.innerText = joke;
+}
+
 // Receive Jokes from Joke API
 async function getJokes() {
     let joke = '';
@@ -24,12 +29,15 @@ async function getJokes() {
         } else {
             joke = data.joke;
         }
-        console.log(joke);
 
         // Pass Joke to tellJoke() for Text to Speech API
         tellJoke(joke);
 
+        // Display Joke Text in Speech Bubble
+        displayJoke(joke);
+
         // Disable Button while audioElement in play
+        toggleButton();
 
     } catch (error) {
         // Catch Error
