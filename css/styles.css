@@ -105,6 +105,24 @@ button:disabled {
     }
     button {
         box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
-        margin-top: 30vh;
+        margin-top: 33vh;
+    }
+    .bubble {
+        margin-top: 4vh;
+    }
+    .bubble::before {
+        content: '';
+        position: absolute;
+        left: 53%;
+        top: 0;
+        width: 0;
+        height: 0;
+        border: 15px solid;
+        border-color: #f8fff89a;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        margin-top: -30px;
+        margin-left: -24px;
     }
 }
