@@ -3,6 +3,12 @@ const audioElement = document.getElementById('audio');
 const jokeTextBubble = document.getElementById('id-bubble');
 
 
+// Disable/Enable Button
+function toggleButton() {
+    button.disabled = !button.disabled;
+}
+
+
 // Receive Jokes from Joke API
 async function getJokes() {
     let joke = '';
@@ -22,6 +28,8 @@ async function getJokes() {
 
         // Pass Joke to tellJoke() for Text to Speech API
         tellJoke(joke);
+
+        // Disable Button while audioElement in play
 
     } catch (error) {
         // Catch Error
@@ -47,3 +55,4 @@ function tellJoke(joke) {
 
 // Event Listeners
 button.addEventListener('click', getJokes);
+audioElement.addEventListener('ended', toggleButton);
