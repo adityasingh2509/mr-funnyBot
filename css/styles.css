@@ -96,6 +96,27 @@ button:disabled {
 }
 
 
+/* Footer */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #AA6DA3;
+    text-align: center;
+}
+
+footer>p {
+    margin: 0;
+    padding: 0;
+}
+
+footer>p:last-child {
+    margin-top: 5px;
+}
+
+
 /* Media Queries for Tablet or Smaller */
 
 @media screen and (max-width: 1024px) {
