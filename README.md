@@ -51,8 +51,6 @@ APIs used in the development of this Application are:
 
 <br>
 
----
-
 ### JokeAPI 
 
 <br>
@@ -124,8 +122,6 @@ function tellJoke(joke) {
 
 ### Display Joke text
 
-<br>
-
 #### script.js
 ```js
 // Display Joke Text
@@ -133,6 +129,8 @@ function displayJoke(joke) {
     jokeTextBubble.innerText = joke;
 }
 ```
+
+---
 
 
 
