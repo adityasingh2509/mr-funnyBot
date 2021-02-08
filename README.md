@@ -130,7 +130,21 @@ function displayJoke(joke) {
 }
 ```
 
+<br>
+
 ---
+
+<br>
+
+## License
+
+<br>
+
+The Source Code in this project is licensed under the MIT License. See [LICENSE](LICENSE) for details. 
+<br>
+⚠️ The Users are responsible for following the Terms & Conditions set forth by any and all Third Party APIs used in the source code.
+
+
 
 
 
