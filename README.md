@@ -9,4 +9,8 @@ APIs used in the development of this Application are:
 
 <br>
 
+## DEMO
+
+### Desktop View
+
 ![Cover - Desktop Mode](images/cover.gif)
