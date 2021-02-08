@@ -14,3 +14,7 @@ APIs used in the development of this Application are:
 ### Desktop View
 
 ![Cover - Desktop Mode](images/cover.gif)
+
+### Mobile View
+
+![Cover - Mobile View](images/cover-mobile.gif)
