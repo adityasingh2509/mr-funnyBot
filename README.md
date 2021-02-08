@@ -24,7 +24,16 @@ APIs used in the development of this Application are:
 
 <br>
 
+---
 
 ## Skills Learned
 
-1. 
+1. Using [VoiceRSS Text to Speech API](http://www.voicerss.org/api/)
+2. Using [JokeAPI](https://sv443.net/jokeapi/v2/)
+3. Modification of CSS properties of `div` element to form CSS triangles.
+4. Using Audio/Video Events like `ended`
+
+
+<br>
+
+---
