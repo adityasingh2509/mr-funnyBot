@@ -98,7 +98,8 @@ async function getJokes() {
 
 <br>
 
-The `voicerss-tts.js` contains the JavaScript SDK Code for better integration with the API. It contains the `VoiceRSS &nbsp; Object` whose `speech` method when provided the joke-text to its `src` returns an audio.
+The `voicerss-tts.js` contains the JavaScript SDK Code for better integration with the API.
+It contains the `VoiceRSS Object` whose `speech` method when provided the joke-text to its `src` returns an audio.
 
 #### script.js
 
