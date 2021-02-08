@@ -123,6 +123,7 @@ footer>p:last-child {
     .container {
         background-position: center center;
         background-size: cover;
+        margin-top: -50px;
     }
     button {
         box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
@@ -145,5 +146,8 @@ footer>p:last-child {
         border-top-color: transparent;
         margin-top: -30px;
         margin-left: -24px;
+    }
+    footer {
+        margin-bottom: 3vh;
     }
 }
