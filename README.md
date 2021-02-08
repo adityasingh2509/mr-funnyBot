@@ -28,6 +28,8 @@ APIs used in the development of this Application are:
 
 ## Skills Learned
 
+<br>
+
 1. Using [VoiceRSS Text to Speech API](http://www.voicerss.org/api/)
 2. Using [JokeAPI](https://sv443.net/jokeapi/v2/)
 3. Modification of CSS properties of `div` element to form CSS triangles.
@@ -37,3 +39,11 @@ APIs used in the development of this Application are:
 <br>
 
 ---
+
+## Process Execution
+
+<br>
+
+1. Receive a joke from [JokeAPI](https://sv443.net/jokeapi/v2/) using `getJokes()` function.
+2. Pass the joke to [VoiceRSS Text to Speech API](http://www.voicerss.org/api/) using `tellJoke()` function to read out the joke.
+3. Simultaneously to Step-2, pass joke to `displayJoke()` function to render joke-text inside speech bubble.
