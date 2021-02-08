@@ -7,7 +7,9 @@ APIs used in the development of this Application are:
 - [VoiceRSS Text to Speech API](http://www.voicerss.org/api/)
 - [JokeAPI](https://sv443.net/jokeapi/v2/)
 
+
 <br>
+
 
 ## DEMO
 
@@ -18,3 +20,11 @@ APIs used in the development of this Application are:
 ### Mobile View
 
 ![Cover - Mobile View](images/cover-mobile.gif)
+
+
+<br>
+
+
+## Skills Learned
+
+1. 
